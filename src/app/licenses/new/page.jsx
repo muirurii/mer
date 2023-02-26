@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export default function LicenseDetails() {
     return (
         <div className='container h-100 d-flex flex-column justify-content-center bg-white'>
@@ -5,7 +6,7 @@ export default function LicenseDetails() {
                 <div className="col-lg-12 col-md-12">
                     <div className='text-center'>
                         <br></br>
-                        <h4>Renew License</h4>
+                        <h4>Apply New License</h4>
                         <hr></hr>
                         <br></br>
                     </div>
@@ -25,39 +26,39 @@ export default function LicenseDetails() {
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">License status </label>
-                                <input type="text" className="form-control Email address" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Renewal Date</label>
-                                <input type="date" className="form-control Email address" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Latest license issued date </label>
-                                <input type="date" className="form-control Email address" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">License Approved by</label>
-                                <input type="text" className="form-control Email address" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">License Holder Info</label>
-                                <input type="text" className="form-control Email address" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Full Name / Business Name</label>
-                                <input type="text" className="form-control Email address" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Date of Payment</label>
-                                <input type="date" className="form-control Email address" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Last amount allocated</label>
-                                <input type="date" className="form-control Email address" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Date of allocation</label>
-                                <input type="date" className="form-control Email address" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-12 col-md-12">
                                 <div className="accordion" id="accordionPanelsStayOpenExample">
@@ -94,26 +95,19 @@ export default function LicenseDetails() {
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
-                            <div className="mb-3 col-lg-6 col-md-6">
-                                <label className="form-label">Trading Hours</label>
+                            <div className="mb-3 col-lg-6 col-md-6 form-check">
                                 <br></br>
-                                
-                                <input type='checkbox'/> <span>Monday</span><br></br>
-                                <input type='checkbox'/> <span>Tuesday</span><br></br>
-                                <input type='checkbox'/> <span>Wednesday</span><br></br>
-                                <input type='checkbox'/> <span>Thursday</span><br></br>
-                                <input type='checkbox'/> <span>Friday</span><br></br>
-                                <input type='checkbox'/> <span>Saturday</span><br></br>
-                                <input type='checkbox'/> <span>Sunday</span><br></br>
-                                <input type='checkbox'/> <span>Public Holidays</span><br></br>
+                                <input type="checkbox" className="form-check-input" id="terms" name="terms" />
+                                <label className="form-check-label" for="terms">I agree to the <a href="#">terms and conditions</a></label>
                             </div>
-                            <div className="mb-3 col-lg-6 col-md-6">
-                                <br></br>
-                                <button type="submit" className="btn btn-outline-primary">Register</button>
-                            </div>
-
+                        </div>
+                        <div className="mb-3 col-lg-6 col-md-6">
+                            <br></br>
+                            <button type="submit" className="btn btn-primary">Apply for license</button>
                         </div>
                     </form>
                     <br></br><br></br>

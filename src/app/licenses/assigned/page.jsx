@@ -12,7 +12,7 @@ export default function LicenseDetails() {
                     <form method='post'>
                         <div className='row'>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="username" className="form-label">Licence Number</label>
+                                <label for="username" className="form-label">License Number</label>
                                 <input type="text" className="form-control"
                                 id="username" name="username"
                                 value="John Doe"

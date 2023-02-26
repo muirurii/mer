@@ -18,7 +18,7 @@ const Nav = () => {
     >
       <button
         onClick={() => setMenu(!menu)}
-        class="btn btn-primary position-absolute end-0 z-3 top-0 rounded-0"
+        className="btn btn-primary position-absolute end-0 z-3 top-0 rounded-0"
         type="submit"
         style={{ transform: "translateX(100%)" }}
       >
@@ -29,9 +29,11 @@ const Nav = () => {
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
       >
         <svg className="bi pe-none me-2" width="40" height="32"></svg>
-        <span className="fs-4">MPUMALANGA ECONOMIC REGULATOR</span>
+        <span className="fs-6">MPUMALANGA ECONOMIC REGULATOR</span>
       </Link>
       <hr />
+      <div className="nav-elements">
+        <div>
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
           <Link href="/" className="nav-link active" aria-current="page">
@@ -39,44 +41,56 @@ const Nav = () => {
             Home
           </Link>
         </li>
+        <li className="nav-item">
+          <Link href="/profile" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Register
+          </Link>
+        </li>
         <li>
-          <Link href="/new_license" className="nav-link text-white">
+          <Link href="/licenses/new" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             New License
           </Link>
         </li>
         <li>
-          <Link href="/approver_new" className="nav-link text-white">
+          <Link href="/licenses/approver" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
-            Approve New
+            Approvers New
           </Link>
         </li>
         <li>
-          <Link href="/final_license" className="nav-link text-white">
+          <Link href="/licenses/final" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
-            Application date
+            Application final
           </Link>
         </li>
         <li>
-          <Link href="/assigned_license" className="nav-link text-white">
+          <Link href="/licenses/assigned" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             Assigned License
           </Link>
         </li>
         <li>
-          <Link href="/license_renew" className="nav-link text-white">
+          <Link href="/licenses/completed" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Completed License
+          </Link>
+        </li>
+        <li>
+          <Link href="/licenses/renew" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             Renew License
           </Link>
         </li>
         <li>
-          <Link href="/license_details" className="nav-link text-white">
+          <Link href="/licenses/details" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             License details
           </Link>
         </li>
         <li>
-          <Link href="/linked_licenses" className="nav-link text-white">
+          <Link href="/licenses/linked" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             Linked Licenses
           </Link>
@@ -88,21 +102,57 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link href="/license_edit" className="nav-link text-white">
+          <Link href="/licenses/edit" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             License edit
           </Link>
         </li>
         <li>
-          <Link href="/all_users" className="nav-link text-white">
+          <Link href="/finance/new" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Finance new
+          </Link>
+        </li>
+        <li>
+          <Link href="/finance/assigned" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Finance assigned
+          </Link>
+        </li>
+        <li>
+          <Link href="/finance/not_reflecting" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Payment not reflecting
+          </Link>
+        </li>
+        <li>
+          <Link href="/finance/verified" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Finance Verified
+          </Link>
+        </li>
+        <li>
+          <Link href="/client/all" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             All users
           </Link>
         </li>
         <li>
-          <Link href="/all_licenses" className="nav-link text-white">
+          <Link href="/licenses/all" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             All licenses
+          </Link>
+        </li>
+        <li>
+          <Link href="/client/details" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Client details
+          </Link>
+        </li>
+        <li>
+          <Link href="/documents" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Documents
           </Link>
         </li>
       </ul>
@@ -148,6 +198,8 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      </div>
       </div>
     </div>
   );

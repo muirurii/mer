@@ -6,7 +6,7 @@ export default function LicenseDetails() {
                 <div className="col-lg-12 col-md-12">
                     <div className='text-center'>
                         <br></br>
-                        <h4>Final License Approval</h4>
+                        <h4>Assigned Finance License</h4>
                         <hr></hr>
                         <br></br>
                     </div>
@@ -16,23 +16,32 @@ export default function LicenseDetails() {
                                 <label for="username" className="form-label">Licensing number</label>
                                 <input type="text" className="form-control"
                                 id="username" name="username"
-                                placeholder="12345"
+                                value="12345"
                                 disabled
                                 readOnly
+                                />
+                            </div>
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label for="username" className="form-label">Customer ref</label>
+                                <input type="text" className="form-control"
+                                id="username" name="username"
+                                value="REF"
+                                disabled
                                 />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="username" className="form-label">Trading name</label>
                                 <input type="text" className="form-control"
                                 id="username" name="username"
-                                placeholder="John Doe"
+                                value="John Doe"
+                                disabled
                                 />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="email" className="form-label">Method of payment</label>
                                 <input type="email" className="form-control" 
                                 id="email" name="email" 
-                                placeholder="Method"
+                                value="Method"
                                 readOnly
                                 disabled
                                 />
@@ -40,7 +49,22 @@ export default function LicenseDetails() {
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Application date </label>
                                 <input type="date" className="form-control"
-                                placeholder="2020-12-02"
+                                value="2020-12-02"
+                                readOnly
+                                disabled
+                                id="confirm-password" />
+                            </div>
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label for="confirm-password" className="form-label">Assigned to</label>
+                                <input type="text" className="form-control"
+                                value="Jane Doe"
+                                readOnly
+                                disabled
+                                id="confirm-password" />
+                            </div>
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label for="confirm-password" className="form-label">Other fees</label>
+                                <input type="text" className="form-control"
                                 id="confirm-password" />
                             </div>
                         </div>

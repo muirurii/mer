@@ -12,7 +12,7 @@ export default function LicenseDetails() {
                     <form method='post'>
                         <div className='row'>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="username" className="form-label">Licence Number</label>
+                                <label for="username" className="form-label">License Number</label>
                                 <input type="text" className="form-control" id="username" name="username" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
@@ -24,7 +24,7 @@ export default function LicenseDetails() {
                                 <input type="text" className="form-control" id="password" name="password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" className="form-label">Licence status </label>
+                                <label for="confirm-password" className="form-label">License status </label>
                                 <input type="text" className="form-control Email address" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
@@ -32,15 +32,15 @@ export default function LicenseDetails() {
                                 <input type="date" className="form-control Email address" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" className="form-label">Latest licence issued date </label>
+                                <label for="confirm-password" className="form-label">Latest license issued date </label>
                                 <input type="date" className="form-control Email address" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" className="form-label">Licence Approved by</label>
+                                <label for="confirm-password" className="form-label">License Approved by</label>
                                 <input type="text" className="form-control Email address" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" className="form-label">Licence Holder Info</label>
+                                <label for="confirm-password" className="form-label">License Holder Info</label>
                                 <input type="text" className="form-control Email address" id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
@@ -99,7 +99,6 @@ export default function LicenseDetails() {
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label className="form-label">Trading Hours</label>
                                 <br></br>
-                                
                                 <input type='checkbox'/> <span>Monday</span><br></br>
                                 <input type='checkbox'/> <span>Tuesday</span><br></br>
                                 <input type='checkbox'/> <span>Wednesday</span><br></br>
@@ -111,7 +110,7 @@ export default function LicenseDetails() {
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <br></br>
-                                <button type="submit" className="btn btn-outline-primary">Register</button>
+                                <button type="submit" className="btn btn-primary">Register</button>
                             </div>
 
                         </div>

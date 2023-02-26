@@ -6,67 +6,53 @@ export default function LicenseDetails() {
                 <div className="col-lg-12 col-md-12">
                     <div className='text-center'>
                         <br></br>
-                        <h4>Approvers View</h4>
+                        <h4>Final License</h4>
                         <hr></hr>
                         <br></br>
                     </div>
                     <form method='post'>
                         <div className='row'>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="username" className="form-label">Licence Number</label>
+                                <label for="username" className="form-label">Licensing number</label>
                                 <input type="text" className="form-control"
                                 id="username" name="username"
-                                value="John Doe"
-                                readOnly
+                                placeholder="12345"
                                 disabled
+                                readOnly
                                 />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="email" className="form-label">Customer Ref</label>
+                                <label for="username" className="form-label">Trading name</label>
+                                <input type="text" className="form-control"
+                                id="username" name="username"
+                                placeholder="John Doe"
+                                />
+                            </div>
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label for="email" className="form-label">Payment verified</label>
                                 <input type="email" className="form-control" 
                                 id="email" name="email" 
-                                value="REF2"
+                                placeholder="Verified"
                                 readOnly
                                 disabled
                                 />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="password" className="form-label">Trading name</label>
+                                <label for="confirm-password" className="form-label">Amount paid</label>
                                 <input type="text" className="form-control"
-                                id="password" name="password"
-                                value="John Doe"
-                                readOnly
-                                disabled
-                                />
+                                placeholder="450"
+                                id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password"
-                                className="form-label">Payment Verified</label>
-                                <input type="text" className="form-control"
-                                id="confirm-password" 
-                                readOnly
-                                disabled
-                                value="Yes"
-                                />
+                                <label for="confirm-password" className="form-label">Date paid</label>
+                                <input type="date" className="form-control"
+                                placeholder="2020-12-02"
+                                id="confirm-password" />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Application date </label>
                                 <input type="date" className="form-control"
-                                value="2020-12-02"
-                                id="confirm-password" />
-                            </div>
-                            <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" className="form-label">Approved By</label>
-                                <input type="text" className="form-control"
-                                id="confirm-password" />
-                            </div>
-                            <div className="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password"
-                                className="form-label">Amount Paid</label>
-                                <input type="text" className="form-control"
-                                value="340"
-                                readOnly
-                                disabled
+                                placeholder="2020-12-02"
                                 id="confirm-password" />
                             </div>
                         </div>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AllLicenses = () => {
   return (
     <div>
@@ -13,7 +11,7 @@ const AllLicenses = () => {
         <thead>
           <tr>
             <th scope="col">
-              License Number
+              License No
             </th>
             <th scope="col">
               Customer Ref
@@ -67,4 +65,4 @@ const AllLicenses = () => {
   )
 }
 
-export default page
+export default AllLicenses;

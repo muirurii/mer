@@ -66,3 +66,22 @@ a {
 .bg-light-g {
     background-color: rgb(255, 255, 255);
 }
+
+.nav-elements {
+    width: calc(100% + 1em);
+    overflow-y: scroll;
+}
+
+.nav-elements>div {
+    height: 500px;
+}
+
+.green-tag {
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 12px;
+    background-color: green;
+    color: #fff;
+    margin-left: 8px;
+    border-radius: 60px;
+}
