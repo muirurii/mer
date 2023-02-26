@@ -1,128 +1,182 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Register from '@/components/register'
-const inter = Inter({ subsets: ['latin'] })
-import Nav from '@/components/nav'
 export default function LicenseDetails() {
     return (
-        <>
-         <Nav/>
         <div className='container h-100 d-flex flex-column justify-content-center bg-white'>
             <div className='row d-flex justify-content-center '>
                 <div className="col-lg-12 col-md-12">
                     <div className='text-center'>
                         <br></br>
-                        <h4>License Form</h4>
+                        <h4>License Details</h4>
                         <hr></hr>
                         <br></br>
                     </div>
                     <form method='post'>
                         <div className='row'>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="username" class="form-label">Licence Number</label>
-                                <input type="text" class="form-control" id="username" name="username" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="username" className="form-label">Licence Number</label>
+                                <input 
+                                disabled
+                                type="text" className="form-control" id="username"
+                                name="username"
+                                value="John Doe"
+                                readOnly
+                                />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="email" class="form-label">Customer Ref</label>
-                                <input type="email" class="form-control" id="email" name="email" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="email" className="form-label">Customer Ref</label>
+                                <input 
+                                disabled
+                                type="email"
+                                className="form-control" id="email" name="email"
+                                value="john@gmail.com"
+                                readOnly
+                                />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="password" class="form-label">Trading name</label>
-                                <input type="text" class="form-control" id="password" name="password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="trading_name" className="form-label">Trading name</label>
+                                <input 
+                                disabled
+                                type="text" className="form-control" 
+                                id="trading_name" name="trading_name"
+                                value="John Doe"
+                                readOnly
+                                />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Licence status </label>
-                                <input type="text" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="license_status" className="form-label">Licence status </label>
+                                <input type="text" className="form-control"
+                                 id="license_status"
+                                value="active"
+                                disabled
+                                readOnly
+                                />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Renewal Date</label>
-                                <input type="date" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="renewal_date" className="form-label">Renewal Date</label>
+                                <input 
+                                disabled
+                                value="2020-04-09"
+                                readOnly
+                                type="date" className="form-control" id="renewal_date" />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Latest licence issued date </label>
-                                <input type="date" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="issue" className="form-label">Latest licence issued date </label>
+                                <input 
+                                disabled
+                                value="2021-05-14"
+                                readOnly
+                                type="date" className="form-control" id="issue" />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Licence Approved by</label>
-                                <input type="text" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="confirm-password" className="form-label">Licence Approved by</label>
+                                <input 
+                                disabled
+                                readOnly
+                                value="John Doe"
+                                type="text" className="form-control" id="confirm-password" />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Licence Holder Info</label>
-                                <input type="text" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="confirm-password" className="form-label">Licence Holder Info</label>
+                                <input 
+                                disabled
+                                readOnly
+                                value="Jane Doe"
+                                type="text" className="form-control" id="confirm-password" />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Full Name / Business Name</label>
-                                <input type="text" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="confirm-password" className="form-label">Full Name / Business Name</label>
+                                <input 
+                                disabled
+                                readOnly
+                                value="Jane Doe"
+                                type="text" className="form-control" id="confirm-password" />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Date of Payment</label>
-                                <input type="date" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label htmlFor="confirm-password" className="form-label">Date of Payment</label>
+                                <input 
+                                disabled
+                                readOnly
+                                value="2020-04-09"
+                                type="date" className="form-control" id="confirm-password" />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Last amount allocated</label>
-                                <input type="date" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label for="confirm-password" className="form-label">Last amount allocated</label>
+                                <input 
+                                disabled
+                                readOnly
+                                value="400"
+                                type="date" className="form-control" id="confirm-password" />
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <label for="confirm-password" class="form-label">Date of allocation</label>
-                                <input type="date" class="form-control" className="Email address" id="confirm-password" />
+                            <div className="mb-3 col-lg-6 col-md-6">
+                                <label for="confirm-password" className="form-label">Date of allocation</label>
+                                <input 
+                                disabled
+                                readOnly
+                                value="2020-02-23"
+                                type="date" className="form-control" id="confirm-password" />
                             </div>
-                            <div class="mb-3 col-lg-12 col-md-12">
-                                <div class="accordion" id="accordionPanelsStayOpenExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <div className="mb-3 col-lg-12 col-md-12">
+                                <div className="accordion" id="accordionPanelsStayOpenExample">
+                                    <div className="accordion-item">
+                                        <h2 className="accordion-header" id="panelsStayOpen-headingOne">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                                 Address
                                             </button>
                                         </h2>
-                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                                            <div class="accordion-body">
+                                        <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div className="accordion-body">
                                                 <div className='row'>
-                                                    <div class="mb-3 col-lg-6 col-md-6">
-                                                        <label for="username" class="form-label">District</label>
-                                                        <input type="text" class="form-control" id="username" name="username" />
+                                                    <div className="mb-3 col-lg-6 col-md-6">
+                                                        <label htmlFor="username" className="form-label">District</label>
+                                                        <input 
+                                                        disabled
+                                                        readOnly
+                                                        value="New District"
+                                                        type="text"
+                                                        className="form-control" id="username" name="username" />
                                                     </div>
-                                                    <div class="mb-3 col-lg-6 col-md-6">
-                                                        <label for="email" class="form-label">Municipality</label>
-                                                        <input type="email" class="form-control" id="email" name="email" />
+                                                    <div className="mb-3 col-lg-6 col-md-6">
+                                                        <label htmlFor="email" className="form-label">Municipality</label>
+                                                        <input 
+                                                        disabled
+                                                        readOnly
+                                                        value="Central"
+                                                        type="email" className="form-control" id="email" name="email" />
                                                     </div>
-                                                    <div class="mb-3 col-lg-6 col-md-6">
-                                                        <label for="password" class="form-label">Town</label>
-                                                        <input type="text" class="form-control" id="password" name="password" />
+                                                    <div className="mb-3 col-lg-6 col-md-6">
+                                                        <label htmlFor="password" className="form-label">Town</label>
+                                                        <input 
+                                                        disabled
+                                                        readOnly
+                                                        value="Center"
+                                                        type="text" className="form-control" id="password" name="password" />
                                                     </div>
-                                                    <div class="mb-3 col-lg-6 col-md-6">
-                                                        <label for="password" class="form-label">Full Address</label>
-                                                        <input type="text" class="form-control" id="password" name="password" />
+                                                    <div className="mb-3 col-lg-6 col-md-6">
+                                                        <label htmlFor="password" className="form-label">Full Address</label>
+                                                        <input 
+                                                        disabled
+                                                        readOnly
+                                                        value="User address"
+                                                        type="text" className="form-control" id="password" name="password" />
                                                     </div>
-                                                    <div class="mb-3 col-lg-6 col-md-6">
-                                                        <label for="password" class="form-label">Coordinates</label>
-                                                        <input type="text" class="form-control" id="password" name="password" />
+                                                    <div className="mb-3 col-lg-6 col-md-6">
+                                                        <label htmlFor="password" className="form-label">Coordinates</label>
+                                                        <input 
+                                                        disabled
+                                                        readOnly
+                                                        value="20467"
+                                                        type="text" className="form-control" id="password" name="password" />
                                                     </div>
-                                                    
-                                                
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
-                            <div class="mb-3 col-lg-6 col-md-6 form-check">
-                                <br></br>
-                                <input type="checkbox" class="form-check-input" id="terms" name="terms" />
-                                <label class="form-check-label" for="terms">I agree to the <a href="#">terms and conditions</a></label>
-                            </div>
-                            <div class="mb-3 col-lg-6 col-md-6">
-                                <br></br>
-                                <button type="submit" class="btn btn-outline-primary">Register</button>
-                            </div>
-
                         </div>
                     </form>
                     <br></br><br></br>
                 </div>
             </div>
-        </div>
-        </>
-    )
+        </div> 
+        )
 }
