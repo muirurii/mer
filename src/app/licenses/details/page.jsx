@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function LicenseDetails() {
     return (
         <div className='container h-100 d-flex flex-column justify-content-center bg-white'>
@@ -175,6 +177,9 @@ export default function LicenseDetails() {
                         </div>
                     </form>
                     <br></br><br></br>
+                    <div>
+                        <Link href="/licenses/edit" className="btn-primary btn">Edit</Link>
+                    </div>
                 </div>
             </div>
         </div> 

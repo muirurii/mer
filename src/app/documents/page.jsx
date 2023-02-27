@@ -6,7 +6,7 @@ import React from 'react'
 
 const Documents = () => {
   return (
-    <div>
+    <div className="w-100">
        <div className="text-center">
         <br></br>
         <h4>Documents library</h4>

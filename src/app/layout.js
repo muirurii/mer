@@ -10,11 +10,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-light-g relative' style={
-        {minHeight:'100vh', fontFamily:'Century Gothic'}}
+      <body className='bg-light-g relative d-flex' style={
+        {minHeight:'100vh', 
+        fontFamily:'Century Gothic'}}
         >
+        <div className="nav-space"></div>
         <Nav />
-        {children}
+        <div className="w-100">
+          {children}
+        </div>
       </body>
     </html>
   )

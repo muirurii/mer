@@ -116,15 +116,6 @@ export default function UserDetails() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mb-3 col-lg-6 col-md-6 form-check">
-                                <br></br>
-                                <input type="checkbox" className="form-check-input" id="terms" name="terms" />
-                                <label className="form-check-label" for="terms">I agree to the <a href="#">terms and conditions</a></label>
-                            </div>
-                        </div>
-                        <div className="mb-3 col-lg-6 col-md-6">
-                            <br></br>
-                            <button type="submit" className="btn btn-primary">Apply for license</button>
                         </div>
                     </form>
                     <br></br><br></br>

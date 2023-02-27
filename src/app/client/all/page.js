@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Users = () => {
   return (
     <div>
@@ -7,7 +9,7 @@ const Users = () => {
         <hr></hr>
         <br></br>
       </div>
-      <table className="table table-bordered">
+      <table className="table table-striped table-sm">
         <thead>
           <tr>
             <th scope="col">Name</th>
@@ -19,6 +21,7 @@ const Users = () => {
             <th scope="col">District</th>
             <th scope="col">Municipality</th>
             <th scope="col">Address</th>
+            <th scope="col">View</th>
           </tr>
         </thead>
         <tbody>
@@ -32,6 +35,7 @@ const Users = () => {
             <td>Township</td>
             <td>Town</td>
             <td>34567</td>
+           <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
           </tr>
           <tr>
             <td>John Doe</td>
@@ -43,6 +47,7 @@ const Users = () => {
             <td>Central</td>
             <td>East</td>
             <td>4678</td>
+           <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
           </tr>
           <tr>
             <td>Jane Doe</td>
@@ -54,6 +59,7 @@ const Users = () => {
             <td>Township</td>
             <td>Town</td>
             <td>34567</td>
+           <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
           </tr>
           <tr>
             <td>John Doe</td>
@@ -65,6 +71,7 @@ const Users = () => {
             <td>Central</td>
             <td>East</td>
             <td>4678</td>
+           <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
           </tr>
           <tr>
             <td>Jane Doe</td>
@@ -76,6 +83,7 @@ const Users = () => {
             <td>Township</td>
             <td>Town</td>
             <td>34567</td>
+           <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
           </tr>
           <tr>
             <td>John Doe</td>
@@ -87,9 +95,39 @@ const Users = () => {
             <td>Central</td>
             <td>East</td>
             <td>4678</td>
+           <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
           </tr>
         </tbody>
       </table>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#">
+              Previous
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              1
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              2
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              3
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };

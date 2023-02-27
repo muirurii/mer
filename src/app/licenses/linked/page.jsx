@@ -1,3 +1,5 @@
+import Link from "next/image";
+
 const page = () => {
   return (
       <div className="container h-100">
@@ -8,117 +10,117 @@ const page = () => {
           <br></br>
         </div>
         <div className="table-responsive">
-          <table className="table table-bordered">
+          <table className="table table-striped table-sm">
             <thead>
               <tr>
-                <th className="px-4 py-2">LICENSE NO</th>
-                <th className="px-4 py-2">TRADING NO</th>
-                <th className="px-4 py-2">STATUS</th>
-                <th className="px-4 py-2">LAST RENEWED</th>
-                <th className="px-4 py-2">PRICE</th>
+                <th>LICENSE NO</th>
+                <th>TRADING NO</th>
+                <th>STATUS</th>
+                <th>LAST RENEWED</th>
+                <th>PRICE</th>
               </tr>
             </thead>
             <tbody>
             <tr>
-                <td className="px-4 py-2">
+                <td>
                     3617
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     4667
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     Active
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     02 Nov 2020
                 </td>
-                <td className="px-4 py-2">
-                <button type="button" className="btn btn-primary">View</button>
+                <td>
+                <Link href="/licenses/details" className="btn btn-primary btn-sm">View</Link>
                 </td>
             </tr>
             <tr>
-                <td className="px-4 py-2">
+                <td>
                     4356
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     6788
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     Expired
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     01 Dec 2019
                 </td>
-                <td className="px-4 py-2">
-                <button type="button" className="btn btn-primary">View</button>
+                <td>
+                <Link href="/licenses/details" className="btn btn-primary btn-sm">View</Link>
                 </td>
             </tr>
             <tr>
-                <td className="px-4 py-2">
+                <td>
                     3617
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     4667
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     Active
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     02 Nov 2020
                 </td>
-                <td className="px-4 py-2">
-                <button type="button" className="btn btn-primary">View</button>
+                <td>
+                <Link href="/licenses/details" className="btn btn-primary btn-sm">View</Link>
                 </td>
             </tr>
             <tr>
-                <td className="px-4 py-2">
+                <td>
                     4356
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     6788
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     Expired
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     01 Dec 2019
                 </td>
-                <td className="px-4 py-2">
-                <button type="button" className="btn btn-primary">View</button>
+                <td>
+                <Link href="/licenses/details" className="btn btn-primary btn-sm">View</Link>
                 </td>
             </tr>
             <tr>
-                <td className="px-4 py-2">
+                <td>
                     3617
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     4667
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     Active
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     02 Nov 2020
                 </td>
-                <td className="px-4 py-2">
-                <button type="button" className="btn btn-primary">View</button>
+                <td>
+                <Link href="/licenses/details" className="btn btn-primary btn-sm">View</Link>
                 </td>
             </tr>
             <tr>
-                <td className="px-4 py-2">
+                <td>
                     4356
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     6788
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     Expired
                 </td>
-                <td className="px-4 py-2">
+                <td>
                     01 Dec 2019
                 </td>
-                <td className="px-4 py-2">
-                <button type="button" className="btn btn-primary">View</button>
+                <td>
+                <Link href="/licenses/details" className="btn btn-primary btn-sm">View</Link>
                 </td>
             </tr>
         </tbody>

@@ -67,13 +67,19 @@ a {
     background-color: rgb(255, 255, 255);
 }
 
-.nav-elements {
+
+/* .nav-elements {
     width: calc(100% + 1em);
     overflow-y: scroll;
 }
 
 .nav-elements>div {
     height: 500px;
+} */
+
+.nav-space {
+    width: 280px;
+    height: 100vh;
 }
 
 .green-tag {
