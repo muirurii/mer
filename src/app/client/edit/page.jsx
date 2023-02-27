@@ -1,12 +1,11 @@
-import Image from "next/image";
-export default function LicenseDetails() {
+export default function Profile() {
   return (
     <div className="container h-100 d-flex flex-column justify-content-center bg-white">
       <div className="row d-flex justify-content-center ">
         <div className="col-lg-12 col-md-12">
           <div className="text-center">
             <br></br>
-            <h4>Apply New License</h4>
+            <h4>Edit Profile</h4>
             <hr></hr>
             <br></br>
           </div>
@@ -14,31 +13,31 @@ export default function LicenseDetails() {
             <div className="row">
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="username" className="form-label">
-                  License Type
-                </label>
-                <select className="form-select" aria-label="Select">
-                  <option selected>Open this select menu</option>
-                  <option value="1">Renewal of liquor licenses</option>
-                  <option value="2">
-                    Renewal of national employment licenses
-                  </option>
-                  <option value="1">
-                    application for appointment of a manager (Gambling and
-                    Liquor)
-                  </option>
-                  <option value="2">Certificate of approval</option>
-                </select>
-              </div>
-              <div className="mb-3 col-lg-6 col-md-6">
-                <label for="username" className="form-label">
-                  License Number
+                  Full Name or Company name
                 </label>
                 <input
                   type="text"
                   className="form-control"
                   id="username"
                   name="username"
+                  value="John Doe"
+                  readOnly
+                  disabled
                 />
+              </div>
+              <div className="mb-3 col-lg-6 col-md-6">
+                <label for="username" className="form-label">
+                  User type
+                </label>
+                <select className="form-select" aria-label="Select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">HOD</option>
+                  <option value="2">Licensing Officer</option>
+                  <option value="1">Licensing Manager</option>
+                  <option value="2">Sole proprietor</option>
+                  <option value="2">Client Company</option>
+                  <option value="2">Client Consultancy</option>
+                </select>
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="email" className="form-label">
@@ -49,107 +48,101 @@ export default function LicenseDetails() {
                   className="form-control"
                   id="email"
                   name="email"
+                  value="Ref"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="password" className="form-label">
-                  Trading name
+                  ID/Company registration number
                 </label>
                 <input
                   type="text"
                   className="form-control"
                   id="password"
                   name="password"
+                  value="12345"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="confirm-password" className="form-label">
-                  License status{" "}
+                  Email address
                 </label>
                 <input
                   type="text"
                   className="form-control"
                   id="confirm-password"
+                  value="john@gmail.com"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="confirm-password" className="form-label">
-                  Renewal Date
+                  Telephone number
                 </label>
                 <input
-                  type="date"
+                  type="text"
                   className="form-control"
-                  id="confirm-password"
+                  id="confirming-password"
+                  value="12345"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="confirm-password" className="form-label">
-                  Latest license issued date{" "}
-                </label>
-                <input
-                  type="date"
-                  className="form-control"
-                  id="confirm-password"
-                />
-              </div>
-              <div className="mb-3 col-lg-6 col-md-6">
-                <label for="confirm-password" className="form-label">
-                  License Approved by
+                  District
                 </label>
                 <input
                   type="text"
                   className="form-control"
                   id="confirm-password"
+                  value="New District"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="confirm-password" className="form-label">
-                  License Holder Info
+                  Municipality
                 </label>
                 <input
                   type="text"
                   className="form-control"
                   id="confirm-password"
+                  value="Central"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="confirm-password" className="form-label">
-                  Full Name / Business Name
+                  Town
                 </label>
                 <input
                   type="text"
                   className="form-control"
                   id="confirm-password"
+                  value="East"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-6 col-md-6">
                 <label for="confirm-password" className="form-label">
-                  Date of Payment
+                  Full Address
                 </label>
                 <input
-                  type="date"
+                  type="text"
                   className="form-control"
                   id="confirm-password"
-                />
-              </div>
-              <div className="mb-3 col-lg-6 col-md-6">
-                <label for="confirm-password" className="form-label">
-                  Last amount allocated
-                </label>
-                <input
-                  type="date"
-                  className="form-control"
-                  id="confirm-password"
-                />
-              </div>
-              <div className="mb-3 col-lg-6 col-md-6">
-                <label for="confirm-password" className="form-label">
-                  Date of allocation
-                </label>
-                <input
-                  type="date"
-                  className="form-control"
-                  id="confirm-password"
+                  value="2346"
+                  readOnly
+                  disabled
                 />
               </div>
               <div className="mb-3 col-lg-12 col-md-12">
@@ -167,7 +160,7 @@ export default function LicenseDetails() {
                         aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne"
                       >
-                        Address
+                        If Not Sole Proprietor(Contact Person)
                       </button>
                     </h2>
                     <div
@@ -179,57 +172,114 @@ export default function LicenseDetails() {
                         <div className="row">
                           <div className="mb-3 col-lg-6 col-md-6">
                             <label for="username" className="form-label">
-                              District
+                              Contact Person or Manager
                             </label>
                             <input
                               type="text"
                               className="form-control"
                               id="username"
                               name="username"
+                              value="John Doe"
+                              readOnly
+                              disabled
                             />
                           </div>
                           <div className="mb-3 col-lg-6 col-md-6">
                             <label for="email" className="form-label">
-                              Municipality
+                              Full Name
                             </label>
                             <input
                               type="email"
                               className="form-control"
                               id="email"
                               name="email"
+                              value="John Doe"
+                              readOnly
+                              disabled
                             />
                           </div>
                           <div className="mb-3 col-lg-6 col-md-6">
                             <label for="password" className="form-label">
-                              Town
+                              Last name
                             </label>
                             <input
                               type="text"
                               className="form-control"
                               id="password"
                               name="password"
+                              value="Doe"
+                              readOnly
+                              disabled
                             />
                           </div>
                           <div className="mb-3 col-lg-6 col-md-6">
                             <label for="password" className="form-label">
-                              Full Address
+                              ID
                             </label>
                             <input
                               type="text"
                               className="form-control"
                               id="password"
                               name="password"
+                              value="12345"
+                              readOnly
+                              disabled
                             />
                           </div>
                           <div className="mb-3 col-lg-6 col-md-6">
                             <label for="password" className="form-label">
-                              Coordinates
+                              Email
                             </label>
                             <input
                               type="text"
                               className="form-control"
                               id="password"
                               name="password"
+                              value="john@gmail.com"
+                              readOnly
+                              disabled
+                            />
+                          </div>
+                          <div className="mb-3 col-lg-6 col-md-6">
+                            <label for="password" className="form-label">
+                              Work Number
+                            </label>
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="password"
+                              name="password"
+                              value="12345"
+                              readOnly
+                              disabled
+                            />
+                          </div>
+                          <div className="mb-3 col-lg-6 col-md-6">
+                            <label for="password" className="form-label">
+                              Cell Number
+                            </label>
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="password"
+                              name="password"
+                              value="12345"
+                              readOnly
+                              disabled
+                            />
+                          </div>
+                          <div className="mb-3 col-lg-6 col-md-6">
+                            <label for="password" className="form-label">
+                              Job Title
+                            </label>
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="password"
+                              name="password"
+                              value="Manager"
+                              readOnly
+                              disabled
                             />
                           </div>
                         </div>
@@ -251,10 +301,10 @@ export default function LicenseDetails() {
                 </label>
               </div>
             </div>
-            <div className="mb-3 col-lg-6 col-md-6">
+            <div className="ml-4">
               <br></br>
               <button type="submit" className="btn btn-primary">
-                Apply for license
+                Register
               </button>
             </div>
           </form>

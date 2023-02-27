@@ -36,6 +36,7 @@ const Users = () => {
             <td>Town</td>
             <td>34567</td>
            <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
+           <td><Link href="/client/edit" className="btn btn-primary btn-sm">Edit</Link></td>
           </tr>
           <tr>
             <td>John Doe</td>
@@ -48,6 +49,7 @@ const Users = () => {
             <td>East</td>
             <td>4678</td>
            <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
+           <td><Link href="/client/edit" className="btn btn-primary btn-sm">Edit</Link></td>
           </tr>
           <tr>
             <td>Jane Doe</td>
@@ -60,6 +62,7 @@ const Users = () => {
             <td>Town</td>
             <td>34567</td>
            <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
+           <td><Link href="/client/edit" className="btn btn-primary btn-sm">Edit</Link></td>
           </tr>
           <tr>
             <td>John Doe</td>
@@ -72,6 +75,7 @@ const Users = () => {
             <td>East</td>
             <td>4678</td>
            <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
+           <td><Link href="/client/edit" className="btn btn-primary btn-sm">Edit</Link></td>
           </tr>
           <tr>
             <td>Jane Doe</td>
@@ -84,6 +88,7 @@ const Users = () => {
             <td>Town</td>
             <td>34567</td>
            <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
+           <td><Link href="/client/edit" className="btn btn-primary btn-sm">Edit</Link></td>
           </tr>
           <tr>
             <td>John Doe</td>
@@ -96,6 +101,7 @@ const Users = () => {
             <td>East</td>
             <td>4678</td>
            <td><Link href="/client/details" className="btn btn-primary btn-sm">View</Link></td>
+           <td><Link href="/client/edit" className="btn btn-primary btn-sm">Edit</Link></td>
           </tr>
         </tbody>
       </table>

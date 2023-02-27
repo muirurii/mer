@@ -47,6 +47,12 @@ const Nav = () => {
             Register
           </Link>
         </li>
+        <li className="nav-item">
+          <Link href="/client/login" className="nav-link text-white">
+            <svg className="bi pe-none me-2" width="16" height="16"></svg>
+            Log in
+          </Link>
+        </li>
         <li>
           <Link href="/licenses/new" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
@@ -57,12 +63,6 @@ const Nav = () => {
           <Link href="/licenses/linked" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16"></svg>
             Linked Licenses
-          </Link>
-        </li>
-        <li>
-          <Link href="/finance/new" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16"></svg>
-            Finance new
           </Link>
         </li>
         <li>

@@ -19,51 +19,101 @@ export default function LicenseDetails() {
                         <div className='row'>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="username" className="form-label">License Number</label>
-                                <input type="text" className="form-control" id="username" name="username" />
+                                <input type="text"
+                                className="form-control" id="username"
+                                value="12345"
+                    readOnly
+                    disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="email" className="form-label">Customer Ref</label>
-                                <input type="email" className="form-control" id="email" name="email" />
+                                <input type="email" className="form-control" id="email" name="email"
+                                value="REF"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="password" className="form-label">Trading name</label>
-                                <input type="text" className="form-control" id="password" name="password" />
+                                <input type="text" className="form-control" id="password" 
+                                name="password"
+                                value="John Doe"
+                    readOnly
+                    disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">License status </label>
-                                <input type="text" className="form-control" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" 
+                                value="Active"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Renewal Date</label>
-                                <input type="date" className="form-control" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password" 
+                                value="2020-02-02"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Latest license issued date </label>
-                                <input type="date" className="form-control" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password"
+                                value="2021-01-06"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">License Approved by</label>
-                                <input type="text" className="form-control" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" 
+                                value="Jane Doe"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">License Holder Info</label>
-                                <input type="text" className="form-control" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" 
+                                value="John Doe"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Full Name / Business Name</label>
-                                <input type="text" className="form-control" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password"
+                                value="John Doe"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Date of Payment</label>
-                                <input type="date" className="form-control" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password"
+                                value="2020-09-02"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Last amount allocated</label>
-                                <input type="date" className="form-control" id="confirm-password" />
+                                <input type="text" className="form-control" id="confirm-password" 
+                                value="450"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-6 col-md-6">
                                 <label for="confirm-password" className="form-label">Date of allocation</label>
-                                <input type="date" className="form-control" id="confirm-password" />
+                                <input type="date" className="form-control" id="confirm-password"
+                                value="2020-01-09"
+                                readOnly
+                                disabled
+                                />
                             </div>
                             <div className="mb-3 col-lg-12 col-md-12">
                                 <div className="accordion" id="accordionPanelsStayOpenExample">
@@ -78,23 +128,43 @@ export default function LicenseDetails() {
                                                 <div className='row'>
                                                     <div className="mb-3 col-lg-6 col-md-6">
                                                         <label for="username" className="form-label">District</label>
-                                                        <input type="text" className="form-control" id="username" name="username" />
+                                                        <input type="text" className="form-control" id="username" name="username"
+                                                        value="Central"
+                                                        readOnly
+                                                        disabled
+                                                        />
                                                     </div>
                                                     <div className="mb-3 col-lg-6 col-md-6">
                                                         <label for="email" className="form-label">Municipality</label>
-                                                        <input type="email" className="form-control" id="email" name="email" />
+                                                        <input type="email" className="form-control" id="email" name="email"
+                                                        value="East"
+                                                        readOnly
+                                                        disabled
+                                                        />
                                                     </div>
                                                     <div className="mb-3 col-lg-6 col-md-6">
                                                         <label for="password" className="form-label">Town</label>
-                                                        <input type="text" className="form-control" id="password" name="password" />
+                                                        <input type="text" className="form-control" id="password" name="password" 
+                                                        value="West"
+                                                        readOnly
+                                                        disabled
+                                                        />
                                                     </div>
                                                     <div className="mb-3 col-lg-6 col-md-6">
                                                         <label for="password" className="form-label">Full Address</label>
-                                                        <input type="text" className="form-control" id="password" name="password" />
+                                                        <input type="text" className="form-control" id="password" name="password" 
+                                                        value="12345"
+                                                        readOnly
+                                                        disabled
+                                                        />
                                                     </div>
                                                     <div className="mb-3 col-lg-6 col-md-6">
                                                         <label for="password" className="form-label">Coordinates</label>
-                                                        <input type="text" className="form-control" id="password" name="password" />
+                                                        <input type="text" className="form-control" id="password" name="password"
+                                                        value="12345"
+                                                        readOnly
+                                                        disabled
+                                                        />
                                                     </div>
                                                 </div>
                                             </div>

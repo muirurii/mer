@@ -236,7 +236,7 @@ export default function Profile() {
                 </label>
               </div>
             </div>
-            <div>
+            <div className="ml-4">
               <br></br>
               <button type="submit" className="btn btn-primary">
                 Register

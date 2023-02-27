@@ -1,6 +1,7 @@
 import Nav from '@/components/nav';
 import './globals.css';
 import "bootstrap/dist/css/bootstrap.css";
+import TopNav from '@/components/top-nav';
 
 export const metadata = {
   title: 'Mpumalanga Economic Regulator',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         {minHeight:'100vh', 
         fontFamily:'Century Gothic'}}
         >
+        {/* <TopNav /> */}
         <div className="nav-space"></div>
         <Nav />
         <div className="w-100">
